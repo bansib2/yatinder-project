@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yatinder Designs</title>
+<title>Shivaya Automotives</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -29,7 +29,6 @@ body { font-family: var(--font-body); color: var(--text); line-height: 1.6; back
 img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; }
 
-/* ─── HEADER ─── */
 .header {
   background: var(--white);
   border-bottom: 1px solid var(--border);
@@ -85,10 +84,8 @@ nav a.active { background: var(--navy); color: var(--white); }
 .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
 .mobile-toggle span { display: block; width: 24px; height: 2px; background: var(--navy); margin: 5px 0; transition: 0.3s; }
 
-/* ─── CONTAINER ─── */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
-/* ─── HERO ─── */
 .hero {
   position: relative; height: 560px; overflow: hidden;
   background: var(--navy-dark);
@@ -137,7 +134,6 @@ nav a.active { background: var(--navy); color: var(--white); }
 }
 .hero-dot.active { background: var(--gold); }
 
-/* ─── ABOUT ─── */
 .about { padding: var(--section-pad) 0; background: var(--white); }
 .about .container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 .about-img {
@@ -164,7 +160,6 @@ nav a.active { background: var(--navy); color: var(--white); }
 }
 .stat-item span { font-size: 13px; color: var(--text-light); }
 
-/* ─── PRODUCTS ─── */
 .products { padding: var(--section-pad) 0; background: var(--cream); }
 .products-header { text-align: center; margin-bottom: 48px; }
 .products-header h2 {
@@ -186,9 +181,9 @@ nav a.active { background: var(--navy); color: var(--white); }
 }
 .product-card-img {
   height: 220px; overflow: hidden;
-  background: #eee; display: flex; align-items: center; justify-content: center;
+  background: #f5f5f5; display: flex; align-items: center; justify-content: center;
 }
-.product-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.product-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 16px; }
 .product-placeholder {
   width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
   background: linear-gradient(135deg, var(--navy) 0%, #2a3f66 100%);
@@ -203,7 +198,6 @@ nav a.active { background: var(--navy); color: var(--white); }
 }
 .product-link:hover { color: var(--navy); }
 
-/* ─── SOCIAL SECTION ─── */
 .social-section {
   padding: var(--section-pad) 0;
   background: var(--navy); color: var(--white);
@@ -224,7 +218,6 @@ nav a.active { background: var(--navy); color: var(--white); }
 .social-img { border-radius: 12px; overflow: hidden; }
 .social-img img { width: 100%; height: 360px; object-fit: cover; }
 
-/* ─── CAPABILITIES ─── */
 .capabilities { padding: var(--section-pad) 0; background: var(--white); }
 .capabilities-header { text-align: center; margin-bottom: 48px; }
 .capabilities-header h2 {
@@ -245,25 +238,18 @@ nav a.active { background: var(--navy); color: var(--white); }
 .cap-card h3 { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
 .cap-card p { font-size: 14px; color: var(--text-light); line-height: 1.6; }
 
-/* ─── CLIENTS ─── */
 .clients { padding: 56px 0; background: var(--cream); border-top: 1px solid var(--border); }
 .clients-header { text-align: center; margin-bottom: 36px; }
 .clients-header h2 { font-family: var(--font-display); font-size: 24px; color: var(--navy); }
 .clients-track {
   display: flex; gap: 48px; align-items: center; justify-content: center; flex-wrap: wrap;
 }
-.client-logo {
-  height: 42px; opacity: 0.45; filter: grayscale(1);
-  transition: opacity 0.3s, filter 0.3s;
-}
-.client-logo:hover { opacity: 1; filter: grayscale(0); }
 .client-placeholder {
   display: inline-flex; align-items: center; justify-content: center;
   height: 42px; padding: 0 20px; border: 1px solid var(--border); border-radius: 6px;
   font-size: 13px; font-weight: 600; color: var(--text-light); background: var(--white);
 }
 
-/* ─── CONTACT ─── */
 .contact { padding: var(--section-pad) 0; background: var(--white); }
 .contact .container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
 .contact-info h2 {
@@ -297,7 +283,6 @@ nav a.active { background: var(--navy); color: var(--white); }
 }
 .submit-btn:hover { background: var(--gold); }
 
-/* ─── FOOTER ─── */
 .footer { background: var(--navy-dark); color: rgba(255,255,255,0.65); padding: 56px 0 0; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
 .footer h3 { font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 16px; }
@@ -312,7 +297,6 @@ nav a.active { background: var(--navy); color: var(--white); }
   font-size: 13px; text-align: center;
 }
 
-/* ─── RESPONSIVE ─── */
 @media (max-width: 1024px) {
   .hero { height: 460px; }
   .hero-content h2 { font-size: 34px; }
@@ -352,20 +336,20 @@ nav a.active { background: var(--navy); color: var(--white); }
 </head>
 <body>
 
-<!-- ═══ HEADER ═══ -->
+<!-- HEADER -->
 <header class="header">
   <div class="header-top">
     <div class="container">
-      <span>An ISO 9001:2015 &amp; IATF 16949:2016 Certified Company</span>
-      <span>Email: <a href="mailto:info@yatinderdesigns.com">info@yatinderdesigns.com</a> &nbsp;|&nbsp; Call: +91 98765 43210</span>
+      <span>ISO 9001:2015 Certified Company</span>
+      <span>Email: <a href="mailto:Shivaya.automotives@gmail.com">Shivaya.automotives@gmail.com</a> &nbsp;|&nbsp; Call: <a href="tel:+919891111965">+91-9891111965</a></span>
     </div>
   </div>
   <div class="header-main">
     <div class="container">
       <a href="#" class="logo">
-        <div class="logo-mark">YD</div>
+        <div class="logo-mark">SA</div>
         <div class="logo-text">
-          <h1>Yatinder Designs</h1>
+          <h1>Shivaya Automotives</h1>
           <span>Precision Fastener Manufacturing</span>
         </div>
       </a>
@@ -379,56 +363,60 @@ nav a.active { background: var(--navy); color: var(--white); }
           <div class="dropdown-menu">
             <a href="#about">Company</a>
             <a href="#">History</a>
-            <a href="#">Water Harvesting</a>
-            <a href="#">Solar Energy</a>
             <a href="#">Social Responsibility</a>
-            <a href="#">Organizational Chart</a>
           </div>
         </div>
         <div class="nav-dropdown">
           <a href="#products">Products</a>
           <div class="dropdown-menu">
-            <a href="#products">Standard</a>
+            <a href="#products">Standard Fasteners</a>
+            <a href="#products">CNC Components</a>
+            <a href="#products">Automotive Parts</a>
             <a href="#products">Parts Per Print</a>
-            <a href="#products">Specials</a>
-            <a href="#products">Automotive</a>
-            <a href="#products">Construction</a>
-            <a href="#products">Electrical</a>
+            <a href="#products">Shafts &amp; Pins</a>
+            <a href="#products">Special Fasteners</a>
           </div>
         </div>
         <a href="#capabilities">Manufacturing</a>
-        <a href="#">Downloads</a>
         <a href="#contact">Contact Us</a>
       </nav>
     </div>
   </div>
 </header>
 
-<!-- ═══ HERO SLIDER ═══ -->
+<!-- HERO SLIDER -->
 <section class="hero">
   <div class="hero-slides">
     <div class="hero-slide active" style="background:#1a2744;">
-      <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1600&q=80" alt="Manufacturing facility">
+      <img src="images/screw_jpg.jpeg" alt="Ensuring highest quality standards">
       <div class="hero-content">
         <h2>Ensuring the <span>highest quality</span> standards</h2>
-        <p>Precision-engineered fasteners for automotive and industrial applications, manufactured to global standards.</p>
+        <p>Precision-engineered fasteners and automotive components, manufactured to global standards.</p>
         <a href="#products" class="hero-btn">Explore Products &#8594;</a>
       </div>
     </div>
     <div class="hero-slide" style="background:#1a2744;">
-      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80" alt="Technology">
+      <img src="images/cnc.png" alt="CNC machined components">
       <div class="hero-content">
-        <h2>Utilizing <span>latest technology</span> for accuracy</h2>
-        <p>State-of-the-art cold forging and machining capabilities, delivering on time, every time.</p>
+        <h2>Cold forged &amp; <span>CNC machined</span> components</h2>
+        <p>Automotive parts, engine, motor, steering, brake parts and custom parts per drawing.</p>
         <a href="#capabilities" class="hero-btn">Our Capabilities &#8594;</a>
       </div>
     </div>
     <div class="hero-slide" style="background:#1a2744;">
-      <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80" alt="Factory">
+      <img src="images/cnc_3_jpg.jpeg" alt="Precision fasteners">
       <div class="hero-content">
-        <h2>Trusted by <span>leading OEMs</span> worldwide</h2>
-        <p>Tier-I supplier to major automotive manufacturers with a production capacity of 18,000 tons annually.</p>
+        <h2>Precision <span>automotive</span> components</h2>
+        <p>High tensile fasteners, shafts, pins, and machined parts for leading automotive manufacturers.</p>
         <a href="#contact" class="hero-btn">Get in Touch &#8594;</a>
+      </div>
+    </div>
+    <div class="hero-slide" style="background:#1a2744;">
+      <img src="images/cnc_4_jpg.jpeg" alt="Precision shafts">
+      <div class="hero-content">
+        <h2>Trusted <span>manufacturing</span> partner</h2>
+        <p>Continuously growing since 2021 with customer support and continuous improvements.</p>
+        <a href="#about" class="hero-btn">About Us &#8594;</a>
       </div>
     </div>
   </div>
@@ -436,40 +424,41 @@ nav a.active { background: var(--navy); color: var(--white); }
     <button class="hero-dot active" onclick="goSlide(0)"></button>
     <button class="hero-dot" onclick="goSlide(1)"></button>
     <button class="hero-dot" onclick="goSlide(2)"></button>
+    <button class="hero-dot" onclick="goSlide(3)"></button>
   </div>
 </section>
 
-<!-- ═══ ABOUT ═══ -->
+<!-- ABOUT -->
 <section class="about" id="about">
   <div class="container">
     <div class="about-img">
-      <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=800&q=80" alt="Yatinder Designs facility">
+      <img src="images/cnc_7.png" alt="Shivaya Automotives components">
     </div>
     <div class="about-text">
       <div class="section-label">About us</div>
-      <h2>Engineering precision since 2007</h2>
-      <p>Yatinder Designs was established in 2007 and has been continuously growing since inception. Our operations conform to ISO 9001, IATF 16949 and ISO 14001 standards.</p>
-      <p>We manufacture cold forged and machined components for the automotive industry as a Tier-I supplier. We specialize in production of all types of high tensile fasteners, automotive parts, engine, chassis, steering, suspension, brake parts and parts per drawing.</p>
-      <p>Our manufacturing plant spans 16,000 sq. meters with a built-up area of 12,000 sq. meters. We source steel from Sunflag, Mukund, Tata Steel, Neco Jaiswal, JSPL &amp; JSW.</p>
+      <h2>Growing with precision since 2021</h2>
+      <p>Shivaya Automotive was established in 2021 and the company is continuously growing since inception. Our operations are as per ISO 9001:2015 Standards.</p>
+      <p>We are manufacturer of Cold Forge and Machined components for Automotive industry. We specialize in production of all type of high tensile fasteners, Automotive parts, Engine, motor, Steering, Break Parts and Parts as per drawing.</p>
+      <p>We are growing with customer support and continuous improvements.</p>
       <div class="about-stats">
         <div class="stat-item">
-          <strong>18,000</strong>
-          <span>Tons annual capacity</span>
+          <strong>2021</strong>
+          <span>Established</span>
         </div>
         <div class="stat-item">
-          <strong>16,000</strong>
-          <span>Sq. mtr. plant area</span>
+          <strong>ISO</strong>
+          <span>9001:2015 Certified</span>
         </div>
         <div class="stat-item">
-          <strong>17+</strong>
-          <span>Years of experience</span>
+          <strong>100%</strong>
+          <span>Quality commitment</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ PRODUCTS ═══ -->
+<!-- PRODUCTS -->
 <section class="products" id="products">
   <div class="container">
     <div class="products-header">
@@ -479,7 +468,9 @@ nav a.active { background: var(--navy); color: var(--white); }
     </div>
     <div class="products-grid">
       <div class="product-card">
-        <div class="product-card-img"><div class="product-placeholder">Standard</div></div>
+        <div class="product-card-img">
+          <img src="images/cnc_3_jpg.jpeg" alt="Standard Fasteners">
+        </div>
         <div class="product-card-body">
           <h3>Standard Fasteners</h3>
           <p>Full range of hex bolts, nuts, screws, and washers manufactured to DIN, ISO, and IS standards.</p>
@@ -487,7 +478,39 @@ nav a.active { background: var(--navy); color: var(--white); }
         </div>
       </div>
       <div class="product-card">
-        <div class="product-card-img"><div class="product-placeholder">Parts Per Print</div></div>
+        <div class="product-card-img">
+          <img src="images/cnc.png" alt="CNC Components">
+        </div>
+        <div class="product-card-body">
+          <h3>CNC Components</h3>
+          <p>Precision CNC machined automotive components for engine, motor, steering, and brake systems.</p>
+          <a href="#" class="product-link">View range &#8594;</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="images/cnc_6.png" alt="Automotive Parts">
+        </div>
+        <div class="product-card-body">
+          <h3>Automotive Parts</h3>
+          <p>Cold forged and machined components engineered for demanding automotive applications.</p>
+          <a href="#" class="product-link">View range &#8594;</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="images/cnc_4_jpg.jpeg" alt="Shafts &amp; Pins">
+        </div>
+        <div class="product-card-body">
+          <h3>Shafts &amp; Pins</h3>
+          <p>Precision-ground shafts, dowel pins, and cylindrical components for critical assemblies.</p>
+          <a href="#" class="product-link">View range &#8594;</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="images/cnc_7.png" alt="Parts Per Print">
+        </div>
         <div class="product-card-body">
           <h3>Parts Per Print</h3>
           <p>Custom manufacturing to your exact specifications and engineering drawings with tight tolerances.</p>
@@ -495,34 +518,12 @@ nav a.active { background: var(--navy); color: var(--white); }
         </div>
       </div>
       <div class="product-card">
-        <div class="product-card-img"><div class="product-placeholder">Specials</div></div>
+        <div class="product-card-img">
+          <img src="images/screw_jpg.jpeg" alt="Special Fasteners">
+        </div>
         <div class="product-card-body">
           <h3>Special Fasteners</h3>
-          <p>Bespoke fastener solutions engineered for unique applications and challenging environments.</p>
-          <a href="#" class="product-link">View range &#8594;</a>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-card-img"><div class="product-placeholder">Automotive</div></div>
-        <div class="product-card-body">
-          <h3>Automotive</h3>
-          <p>Engine, chassis, steering, suspension, and brake components for leading automotive OEMs.</p>
-          <a href="#" class="product-link">View range &#8594;</a>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-card-img"><div class="product-placeholder">Construction</div></div>
-        <div class="product-card-body">
-          <h3>Construction</h3>
-          <p>Heavy-duty fasteners and anchor systems built for structural integrity and long service life.</p>
-          <a href="#" class="product-link">View range &#8594;</a>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-card-img"><div class="product-placeholder">Electrical</div></div>
-        <div class="product-card-body">
-          <h3>Electrical</h3>
-          <p>Precision components for electrical panels, switchgear assemblies, and power distribution.</p>
+          <p>Bespoke high tensile fastener solutions engineered for unique and challenging applications.</p>
           <a href="#" class="product-link">View range &#8594;</a>
         </div>
       </div>
@@ -530,23 +531,23 @@ nav a.active { background: var(--navy); color: var(--white); }
   </div>
 </section>
 
-<!-- ═══ SOCIAL RESPONSIBILITY ═══ -->
+<!-- SOCIAL RESPONSIBILITY -->
 <section class="social-section">
   <div class="container">
     <div>
-      <div class="section-label" style="color:var(--gold-light);">Social responsibility</div>
-      <h2>Building stronger communities</h2>
-      <p>Social responsibility of business implies the obligations of the management to protect the interests of society. Businesses that practice corporate social responsibility aim to improve communities, the economy, and the environment.</p>
-      <p>At Yatinder Designs, we are committed to sustainable manufacturing, rainwater harvesting, solar energy adoption, and supporting the local community through education and welfare programs.</p>
-      <a href="#" class="social-btn">Our initiatives &#8594;</a>
+      <div class="section-label" style="color:var(--gold-light);">Our commitment</div>
+      <h2>Quality &amp; customer focus</h2>
+      <p>At Shivaya Automotives, quality isn't just a standard — it's the foundation of everything we do. Every component we manufacture undergoes rigorous quality checks to ensure it meets the highest industry standards.</p>
+      <p>We believe in building long-term partnerships with our customers through consistent quality, on-time delivery, and continuous improvements in our processes and products.</p>
+      <a href="#contact" class="social-btn">Work with us &#8594;</a>
     </div>
     <div class="social-img">
-      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Community initiatives">
+      <img src="images/cnc.png" alt="Quality manufacturing">
     </div>
   </div>
 </section>
 
-<!-- ═══ CAPABILITIES ═══ -->
+<!-- CAPABILITIES -->
 <section class="capabilities" id="capabilities">
   <div class="container">
     <div class="capabilities-header">
@@ -558,35 +559,35 @@ nav a.active { background: var(--navy); color: var(--white); }
         <div class="cap-icon">&#9881;</div>
         <div>
           <h3>Cold Forging</h3>
-          <p>Multi-station cold forging with capacities from M5 to M24, producing complex geometries at high volumes with minimal material waste.</p>
+          <p>Multi-station cold forging for producing complex high tensile fasteners and automotive components with minimal material waste.</p>
         </div>
       </div>
       <div class="cap-card">
         <div class="cap-icon">&#9878;</div>
         <div>
           <h3>CNC Machining</h3>
-          <p>Precision CNC turning and milling centers for secondary operations and finish machining to micron-level tolerances.</p>
+          <p>Precision CNC turning and milling for secondary operations and finish machining to micron-level tolerances.</p>
         </div>
       </div>
       <div class="cap-card">
         <div class="cap-icon">&#9879;</div>
         <div>
           <h3>Heat Treatment</h3>
-          <p>In-house continuous mesh belt furnaces for hardening, tempering, and carburizing to achieve required mechanical properties.</p>
+          <p>Hardening, tempering, and carburizing processes to achieve required mechanical properties for automotive-grade components.</p>
         </div>
       </div>
       <div class="cap-card">
         <div class="cap-icon">&#128270;</div>
         <div>
           <h3>Quality Testing</h3>
-          <p>Fully equipped lab with tensile testing, hardness testing, metallography, salt spray, and CMM for dimensional inspection.</p>
+          <p>Comprehensive quality lab with tensile testing, hardness testing, and dimensional inspection as per ISO 9001:2015 standards.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ CLIENTS ═══ -->
+<!-- CLIENTS -->
 <section class="clients">
   <div class="container">
     <div class="clients-header">
@@ -605,7 +606,7 @@ nav a.active { background: var(--navy); color: var(--white); }
   </div>
 </section>
 
-<!-- ═══ CONTACT ═══ -->
+<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="container">
     <div class="contact-info">
@@ -617,15 +618,15 @@ nav a.active { background: var(--navy); color: var(--white); }
       </div>
       <div class="contact-block">
         <h3>Address</h3>
-        <p>18th Mile Stone, Rohtak-Delhi Highway,<br>Village Ismaila, Rohtak – 124001,<br>Haryana, India</p>
+        <p>D1-Umesh Estate, Jiwan Nagar,<br>Faridabad, Haryana – 121004</p>
       </div>
       <div class="contact-block">
         <h3>Email</h3>
-        <p><a href="mailto:info@yatinderdesigns.com">info@yatinderdesigns.com</a></p>
+        <p><a href="mailto:Shivaya.automotives@gmail.com">Shivaya.automotives@gmail.com</a></p>
       </div>
       <div class="contact-block">
         <h3>Phone</h3>
-        <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+        <p><a href="tel:+919891111965">+91-9891111965</a></p>
       </div>
     </div>
     <div class="contact-form">
@@ -658,52 +659,53 @@ nav a.active { background: var(--navy); color: var(--white); }
   </div>
 </section>
 
-<!-- ═══ FOOTER ═══ -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div>
-        <h3>Yatinder Designs</h3>
-        <p>We specialize in production of cold and hot forged high tensile fasteners, automotive, engine, chassis, steering, suspension, brake parts and parts per drawing.</p>
+        <h3>Shivaya Automotives</h3>
+        <p>We specialize in production of cold forged and CNC machined high tensile fasteners, automotive parts, engine, motor, steering, brake parts and parts as per drawing.</p>
+        <p style="margin-top:12px;">
+          <a href="mailto:Shivaya.automotives@gmail.com" style="color:var(--gold-light);">Shivaya.automotives@gmail.com</a><br>
+          <a href="tel:+919891111965" style="color:var(--gold-light);">+91-9891111965</a>
+        </p>
       </div>
       <div>
         <h3>Company</h3>
         <ul>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#">History</a></li>
-          <li><a href="#">Water Harvesting</a></li>
-          <li><a href="#">Solar Energy</a></li>
           <li><a href="#">Social Responsibility</a></li>
-          <li><a href="#">Organizational Chart</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
       <div>
         <h3>Products</h3>
         <ul>
-          <li><a href="#products">Standard</a></li>
+          <li><a href="#products">Standard Fasteners</a></li>
+          <li><a href="#products">CNC Components</a></li>
+          <li><a href="#products">Automotive Parts</a></li>
+          <li><a href="#products">Shafts &amp; Pins</a></li>
           <li><a href="#products">Parts Per Print</a></li>
-          <li><a href="#products">Specials</a></li>
-          <li><a href="#products">Automotive</a></li>
-          <li><a href="#products">Construction</a></li>
-          <li><a href="#products">Electrical</a></li>
+          <li><a href="#products">Special Fasteners</a></li>
         </ul>
       </div>
       <div>
-        <h3>Certifications</h3>
+        <h3>Address</h3>
+        <p>D1-Umesh Estate, Jiwan Nagar, Faridabad, Haryana – 121004</p>
+        <h3 style="margin-top:20px;">Certifications</h3>
         <ul>
           <li>ISO 9001:2015</li>
-          <li>IATF 16949:2016</li>
-          <li>ISO 14001:2015</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2024 Yatinder Designs Pvt. Ltd. All rights reserved.
+      &copy; 2024 Shivaya Automotives. All rights reserved.
     </div>
   </div>
 </footer>
 
-<!-- ═══ HERO SLIDER JS ═══ -->
 <script>
 let currentSlide = 0;
 const slides = document.querySelectorAll('.hero-slide');
